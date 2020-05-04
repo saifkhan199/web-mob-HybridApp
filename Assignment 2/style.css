@@ -1,0 +1,62 @@
+#logo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 120px;
+}
+#div2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 120px;
+ 
+}
+
+#thanks{
+  color: rgb(11, 218, 11);
+}
+
+#accept
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+#date
+{
+   width: 168px;
+}
+#div1{
+  
+  width: fit-content;
+  background-color: rgb(153,50,204);
+  margin: 0 auto;
+  color: white;
+  text-transform: uppercase;
+}
+
+h1{
+  text-align: center;
+  color: rgb(153,50,204);
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+h3{
+  text-align: center;
+  color: rgb(153,50,204);
+  font-family: 'Courier New', Courier, monospace;
+}
+textarea{
+  height: 80px;
+  width: 200px;
+}
+input
+{
+  margin-top: 10px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <img src="Saylani-logo.png" alt="logo" id="logo" >
+
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <h3>This Clone is Created by Saif (WM 9929)</h3>
+    <div id="div1">
+    <form  action="Submit.html">
+    <table style="margin-left:20px; padding-top:20px;">
+        
+      <tr>
+          <td><label for="First Name">First Name:</label> </td>
+          <td><input type="text" id="fname" placeholder="Enter first name" required ><label>(Max 30 characters a-z and A-Z)</label></td> 
+      </tr>
+      
+      <tr>
+        <td><label for="Last Name">Last Name:</label> </td>
+        <td><input type="text" id="lname" placeholder="Enter last  name" required><label>(Max 30 characters a-z and A-Z)</label></td> 
+    </tr>
+    
+     <tr>
+        <td ><label for="Date of Birth">Date of Birth:</label></td>
+        <td><input id="date" type="date" name="dob" value="dob" required ></td>
+      </tr>
+
+
+      <tr>
+        <td><label for="Email">Email:</label> </td>
+        <td><input type="email" id="email" placeholder="Enter email Address"></td>
+    </tr>
+        
+    <tr>
+        <td><label for="Mobile Number">Mobile Number:</label></td>
+        <td><input type="text" id="number" placeholder="Enter Mobile Number" required></td>
+    </tr>
+
+    <tr>
+        <td style="padding-top: 10px;"><label for="Gender">Gender:</label></td>
+        <td>Male<input type="radio" id="male" name="gender" required>
+        Female<input type="radio" id="female" name="gender" required></td>
+    </tr>
+
+    <tr>
+        <td>Address:</td>
+       <td><textarea required ></textarea > </td>
+    </tr>
+
+    <tr>
+        <td><label for="City">City:</label></td>
+        <td><input type="text" id="city" placeholder="Enter city name" maxlength="20" required><label>(Max 30 characters a-z and A-Z)</label></td>
+    </tr>
+
+    <tr>
+        <td><label for="Pin Code">Pin Code:</label></td>
+        <td><input type="text" id="code" placeholder="Enter pincode" maxlength="50" required>(6 digit number)</td>   
+    </tr>
+
+    <tr>
+        <td><label for="State">State:</label></td>
+        <td><input type="text" id="state" placeholder="Enter state" maxlength="50" required><label>(Max 30 characters a-z and A-Z)</label></td>  
+    </tr>
+   
+    <tr>
+        <td><label for="Country">Country:</label></td>
+        <td><input type="text" id="country" placeholder="Enter country" maxlength="50" required></td>
+        
+    </tr>
+    </table>
+	<table style="margin-left:20px;">
+    <tr>
+        <td>
+            Hobbies:
+        </td>
+        <td style="padding-left:70px;">Drawing<input type="checkbox"id="drawing">
+            Singing<input type="checkbox"id="singing">
+            Dancing<input type="checkbox"id="dancing">
+            Sketching<input type="checkbox"id="sketching">
+            Others<input type="checkbox"id="others">
+            <textarea style="height: 15px;"></textarea>
+    </td>    
+    </tr>
+    </table>
+	<table style="margin-left:20px;">
+    <tr>
+        <td>Qualification:</td>
+        <td style="padding-left:17px;">SNo </td>
+        <td style="padding-left:17px;">Examination</td>
+        <td style="padding-left:15px;">Board</td>
+        <td style="padding-left:175px;">Percentage</td>
+        <td style="padding-left:130px;">Year of Passing</td>
+        
+    </tr>
+</table>
+<table style="margin-left:20px;">
+    <tr>
+     <td style="padding-left:170px;">1</td>
+     <td style="padding-left:20px;">Class X</td>
+     <td style="padding-left:60px;"><input type="text"></td>
+     <td style="padding-left:60px;"><input type="text"></td>
+     <td style="padding-left:60px;"><input type="text"></td>
+    </tr> 
+    </table>
+	<table>
+    <tr>
+        <td></td>
+        <td style="padding-left:185px;">2</td>
+        <td style="padding-left:20px;">Class XII</td>
+        <td style="padding-left:50px;"><input type="text"></td>
+        <td style="padding-left:60px;"><input type="text"></td>
+        <td style="padding-left:60px;"><input type="text"></td>
+
+     </tr>
+     </table>
+     <table>
+     <tr>
+        <td></td>
+        <td style="padding-left:185px;">3</td>
+        <td style="padding-left:20px;">Graduation</td>
+        <td style="padding-left:23px;"><input type="text"></td>
+        <td style="padding-left:60px;"><input type="text"></td>
+        <td style="padding-left:60px;"><input type="text"></td>
+
+     </tr>
+    </table>
+	 <table>
+     <tr>
+        <td></td>
+       <td  style="padding-left:185px;">4</td>
+        <td  style="padding-left:20px;" >Masters</td>
+        <td  style="padding-left:55px;"><input type="text"></td>
+        <td  style="padding-left:60px;"><input type="text"></td>
+        <td  style="padding-left:60px;"><input type="text"></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td  style="padding-left:60px;">(10 char max)</td>
+            <td  style="padding-left:60px;">(Upto 2 Decimal)</td>
+    
+         </tr>
+        </tr>
+    </table>
+		<table>
+     <tr>
+        <td style="padding-left:20px; padding-top:10px;" ><label for="Course Applied For">Course Applied:</label></td>
+        <td>
+        BCA<input type="radio" id="BCA" name="quali">
+        B.Com<input type="radio" id="B.com" name="quali">
+        B.Sc<input type="radio" id="B.Sc" name="quali">
+        B.A<input type="radio" id="B.A" name="quali"></td>
+     </tr>
+     </table>
+    <br></br>
+    <table  align="center" >
+   <tr>
+   
+       <td  id="submit"><button type="submit">Submit</button></td>
+       <td id="reset"><button type="reset">Reset</button></td>
+      
+   </tr>
+   </table>
+    </form>
+    
+</div>
+</body>
+</html>
