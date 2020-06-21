@@ -13,82 +13,57 @@
     <script>
         alert("Alert from body before HTML !");
     </script>
-    <h1>Assignment 5 !</h1>
+    
+    <h2>---------</h2>
         <script>
             alert("Alert from body inside of HTML ! ");
         </script>
-    <h2>JavaScript</h2>
+    <h2>---------</h2>
+
     <Script>
         alert("Alert from body after HTML !");
     </Script>
     
-     <p id="p"></p>
-     <p id="p2"></p>
-     <p id=p3></p>
-     <p id="p4"></p>
-     <p> <b>Rules for naming JS variables</b> <br><br>
-        b) Variable names can only contain number, $ and _. For example $my_1stVariable<br>
-        c) Variables must begin with a letter, $ or _. For example $name, _name or name<br>
-        d) Variable names are case Sensitive<br>
-        e) Variable names should not be JS Keyword<br></p>
-    <p id="p5">
-       
-        <script>
-            //Chpater 5 Task 3
-            var no;
-            document.writeln("Value after variable declaration is: ??");
-            no=4;
-            document.writeln("<br>Initial Value: "+no.valueOf());
-            ++no;
-            document.writeln("<br>Value after increment is: "+no.valueOf());
-            no=no+parseInt(7);
-            document.writeln("<br>Value after addition is: "+no.valueOf());
-            --no;
-            document.writeln("<br>Value after decrement is: "+no.valueOf());
-            document.writeln("<br>The remainder is : "+parseInt(no % parseInt(3)));
+    <!-- chapter 6-9 task 6 -->
+    <table>
+        
+        <tr><th>Subject</th><th>Total</th><th>Marks Obtained</th><th>Marks Percentage</th></tr>
+        <tr><td id=s1></td><td>100</td><td id="m1"></td><td id="p1"></td></tr>
+        <tr><td id=s2></td><td>100</td><td id="m2"></td><td id="p2"></td></tr>
+        <tr><td id=s3></td><td>100</td><td id="m3"></td><td id="p3"></td></tr>
+        <tr><td></td><td id="total"></td><td id="obttotal"></td><td id="totalpert"></td></tr>
 
-            // Chpater 5 Task 4
-            var cost=600;
-            document.writeln("<br> <br> The cost of Buying 5 Movie Tickets is: "+cost*5+"PKR");
+    </table>
+    <script>
+        var sub1=prompt("Enter Subject 1");
+        var sub2=prompt("Enter Subject 2");
+        var sub3=prompt("Enter Subject 3");
+        var mark1=prompt("Enter Marks for "+sub1);
+        var mark2=prompt("Enter Marks for "+sub2);
+        var mark3=prompt("Enter Marks for "+sub3);
+        var par1=parseInt((parseInt(mark1)/100)*100);
+        var par2=parseInt((parseInt(mark2)/100)*100);
+        var par3=parseInt((parseInt(mark3)/100)*100);
 
-            //Chapter 5 Task 5
-            document.writeln("<br><br> Table of 3<br>");
-            for(var i=1;i<=10;i++){
-                document.writeln("<br> 3 X "+i+" = "+3*i);
-            }
+        var markfinal=(parseInt(mark3)+parseInt( mark2)+parseInt( mark1));
+        var perTotal= parseInt((parseInt(markfinal)/300)*100);
 
-            //Chapter 5 Task 6
-            var tempC=25;
-            var tempF=((tempC*9)/5)+32;
-            document.writeln("<br> <br>"+tempC+"C is: "+tempF+"F");
-            var tempF2=70;
-            var tempC2=((tempF2-32)*5)/9;
-            document.writeln("<br>"+tempF2+"F is"+tempC2+"C");
-        </script>
-    </p>
-     <script>
-         document.getElementById("p").innerHTML="Yeah ! I can write HTML through JS\n";
-         //Chapter 3 Task 2
-         var birthYear=2000;
-     document.getElementById("p2").innerHTML="My Year of Born is: "+birthYear+"\n Data type of variable is: "+ typeof birthYear;
-         //Chapter 3 Task 4
-         var name="saif";
-         var product="LCD";
-         var quantity="2";
-         var site="www.MySite.com"
-         document.getElementById("p3").innerHTML= name+" Ordered "+quantity+" "+product+" on "+site;
+        document.getElementById("s1").innerHTML=sub1;
+        document.getElementById("m1").innerHTML=mark1;
+        document.getElementById("p1").innerHTML=par1+"%";
 
-         //Chapter 5
-        //Task 1 and 2
-        var _1=prompt("Enter first Number: ");
-        var _2=prompt("Enter Second Number: ");
-        document.getElementById("p4").innerHTML="Sum of "+_1 +" and "+_2+" is: "+parseInt(parseInt(_1)+parseInt(_2));
-        document.getElementById("p4").append(" Subtraction of "+_1 +" and "+_2+" is: "+parseInt(parseInt(_1)-parseInt(_2)));
-        document.getElementById("p4").append(" Product of "+_1 +" and "+_2+" is: "+parseInt(parseInt(_1)*parseInt(_2)));
-        document.getElementById("p4").append(" Modulas of "+_1 +" and "+_2+" is: "+parseInt(parseInt(_1) % parseInt(_2)));
+        document.getElementById("s2").innerHTML=sub2;
+        document.getElementById("m2").innerHTML=mark2;
+        document.getElementById("p2").innerHTML=par2+"%";
 
-    
-     </script>
-    
+        document.getElementById("s3").innerHTML=sub3;
+        document.getElementById("m3").innerHTML=mark3;
+        document.getElementById("p3").innerHTML=par3+"%";
+
+        document.getElementById("total").innerHTML=300;
+        document.getElementById("obttotal").innerHTML=markfinal;
+        document.getElementById("totalpert").innerHTML=perTotal+"%";
+        
+    </script>
 </body>
 </html>
