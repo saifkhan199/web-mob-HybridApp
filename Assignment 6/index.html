@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <p>
+       <script>
+           //chapter 35-38
+           //task 1
+           document.write(dt());
+
+           //task 2
+           var fname=prompt("Enter First Name: ");
+           var lname=prompt("Enter last Name: ");
+            document.write(greet(fname,lname));
+
+            //task 3
+            var first=prompt("Enter First No: ");
+            var second=prompt("Enter Second No: ");
+            document.write("<br>Sum is: "+sum(first,second));
+
+            //task 4
+            var num1=prompt("Enter First No: ");
+            var num2=prompt("Enter Second No: ");
+            var opr=prompt("Enter Operator:  (+,-,*,/)");
+
+            document.write(calculator(num1,num2,opr));
+
+            //task 5
+            var no=prompt("Enter a Number: ");
+            document.write("<br>Square of "+no+" is: "+square(no));
+
+            //task 6
+            var no=prompt("Enter a positive no to find Factorial: ");
+            document.write("<br>Factorial of "+no+" is: "+fact(no));
+
+            //task 7
+            var start=prompt("Enter Starting no: ");
+            var end=prompt("Enter Ending no: ");
+            count(start,end);
+
+            //task 8
+            var b=prompt("Enter Base of right Angle Triangle: ");
+            var p=prompt("Enter Perpendicular of right Angle Triangle: ");
+            document.write("<br>Hypotenious = "+hyp(b,p));
+
+            //task 9
+            var width=prompt("Enter Width: ");
+            var height=prompt("Enter Height: ");
+
+            document.write("<br>Area is: (As variable) "+area(width,height));
+            document.write("<br>Area is: (As value) "+area(prompt("Enter Width: "), prompt("Enter Height: ")));
+
+            //task 10
+            var word=prompt("Enter word to check Palindrome: ");
+            if(palindrome(word)==true){
+                document.write("<br>"+word+" is Palindrome");
+            }
+            else
+            document.write("<br>"+word+" is not Palindrome");
+
+            //task 11
+            var string=prompt("Enter String: ");
+            document.write("<br>"+change(string));
+
+            //task 12
+            var string=prompt("Enter the string: ");
+            document.write("<br>"+string+"<br>longest word in string is: "+longest(string));
+
+            //task 13
+            var string=prompt("Enter String: ");
+            var letter=prompt("Enter Letter to count: ");
+            document.write("<br>Letter "+letter+" occur "+occurence(string,letter)+" times in "+string);
+
+            //task 14
+            var radius=prompt("Enter radius of Circle: ");
+            document.write("<br>Circumference of circle is: "+calcCircumference(radius));
+            document.write("<br>Area of circle is: "+calcArea(radius));
+
+       </script>
+    </p>
+    
+</body>
+</html>
