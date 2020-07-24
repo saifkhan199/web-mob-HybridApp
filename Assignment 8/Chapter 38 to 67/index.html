@@ -7,7 +7,39 @@
     <script src="app.js"></script>
 </head>
 <body>
+    <br>
+    <a href="JavaScript:void(0)" onClick="message()">Click Me</a>
+    <br>
+    <h3>Mobile Phone Lookup</h3>
+    <img src="Images/iphone.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Iphone 11')">
+    <img src="Images/s20.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Samsung S20')">
+    <img src="Images/1112.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Nokia 1112')">
+
+    <form>
+        <table>
+            <tr>
+                <td>Sno</td><td>Name</td><td>Class</td>
+            </tr>
+            <tr id='0'>
+                <td>0</td><td>Abc</td><td>5</td><td><button onclick="document.getElementById('0').remove()">Delete</button></td>
+            </tr>
+            <tr id='1'>
+                <td>1</td><td>Def</td><td>6</td><td><button onclick="document.getElementById('1').remove()">Delete</button></td>
+            </tr>
+            <tr id='2'>
+                <td>2</td><td>Ghi</td><td>7</td><td><button onclick="document.getElementById('2').remove()">Delete</button></td>
+            </tr>
+            <tr id='3'>
+                <td>3</td><td>Jkl</td><td>8</td><td><button onclick="document.getElementById('3').remove()">Delete</button></td>
+            </tr>
+        </table>
+    </form>
+    <img src="Images/iphone.jpg" style="width: 50vw; height: 50vw;" onmouseover="src='Images/s20.jpg'" onmouseout="src='Images/iphone.jpg'">
     
-    
+    <div style="text-align: center;" >
+        <h1 id="counter" style="color: blue;">0</h1><br>
+        <button onclick="var count=parseInt(document.getElementById('counter').innerText); document.getElementById('counter').innerHTML= ++count">Increase</button>&nbsp; &nbsp;
+        <button onclick="var count=parseInt(document.getElementById('counter').innerText); document.getElementById('counter').innerHTML= --count">Decrease</button>
+    </div>
 </body>
 </html>
