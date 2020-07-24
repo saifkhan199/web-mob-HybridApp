@@ -160,3 +160,8 @@ vowelSuccession();
 distance();
 pay();
 note();
+
+//Chpater 43 to 48
+function message(){
+    alert("Hi User !");
+}
