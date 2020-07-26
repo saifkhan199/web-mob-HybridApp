@@ -151,17 +151,53 @@ function note(){
 	document.write("<br>Required notes of Rs. 10   :"+ (((amount % 100) % 50) / 10));
 	document.write("<br>Amount still remaining Rs. :"+ (((amount % 100) % 50) % 10));
 }
-leap();
-area();
-main();
-getIndex();
-rm();
-vowelSuccession();
-distance();
-pay();
-note();
+// leap();
+// area();
+// main();
+// getIndex();
+// rm();
+// vowelSuccession();
+// distance();
+// pay();
+// note();
 
 //Chpater 43 to 48
 function message(){
     alert("Hi User !");
 }
+
+//chapter 49 to 52
+function show_data(name,fname,phone){
+    var p=document.getElementById('display');
+    var text=document.createTextNode("Name: "+name+" Fname: "+fname+" Phone#: "+phone+"\n");
+    p.appendChild(text);
+    
+}
+function expand() {
+     var fullText= "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis distinctio cumque ab asperiores non"+ 
+     "esse dolorum, et officia quisquam aut porro voluptatum id itaque saepe, quo amet unde est. Minima."+
+     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, hic. Vel error laboriosam itaque laborum "+
+     "ullam, beatae repellat ipsum possimus amet quidem eligendi nisi cumque perspiciatis at ipsa, velit doloremque!";
+    document.getElementById("text").innerHTML = fullText;
+    }
+//chapter 52 to 57
+function zoomIn(){
+    var txt = document.getElementById('zoom');
+    var style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    var currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + 10) + 'px';
+}
+function zoomOut(){
+    var txt = document.getElementById('zoom');
+    var style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    var currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize - 10) + 'px';
+}
+
+//chapter 58 to 67
+function getData(){
+    // let main=document.getElementById('main-content');
+    // let child=main.children;
+    // document.write(child);
+}
+getData();
