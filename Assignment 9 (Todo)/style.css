@@ -1,0 +1,18 @@
+li{
+    border-style: solid;
+    border-radius: 2em;
+    margin: 0.5em;
+   border-width: thin;
+   
+}
+
+.icons{
+    width: 3em; height: 3em; border-style: solid; margin: 3px; border-radius: 1em;
+   
+  }
+  body{
+    background-image: url("Icons/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ 

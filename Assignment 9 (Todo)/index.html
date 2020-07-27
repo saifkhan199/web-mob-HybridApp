@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center; display: flex; justify-content: center;">
+        <input type="text" id="items" style="height: 5vw; font-size: 20px;" maxlength="100"> 
+        <div style="display: flex; flex-direction: column;">
+        <a href="#"><img src="Icons/add.png" class="icons" onclick="add()"></a>
+        <p>Add</p>
+         </div>  
+
+         <div style="display: flex; flex-direction: column;">
+            <a href="#"><img src="Icons/delete.png" class="icons" onclick="deleteAll()"></a>
+            <p>Delete All</p>
+             </div>  
+    </div>
+
+    <div style="text-align: center;" id="items-list" >
+        <ul id="to-do-items">
+            
+        </ul>
+        
+    </div>
+    
+</body>
+</html
