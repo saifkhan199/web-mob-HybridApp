@@ -5,9 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="app.js"></script>
+
+    <style>
+        
+        #myImg {
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        #myImg1:hover {opacity: 0.7;}
+        #myImg2:hover {opacity: 0.7;}
+        #myImg3:hover {opacity: 0.7;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+        
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          height: 50%;
+        }
+        
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          height: 150px;
+        }
+        
+        /* Add Animation */
+        .modal-content, #caption {  
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        
+        @-webkit-keyframes zoom {
+          from {-webkit-transform:scale(0)} 
+          to {-webkit-transform:scale(1)}
+        }
+        
+        @keyframes zoom {
+          from {transform:scale(0)} 
+          to {transform:scale(1)}
+        }
+        
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px){
+          .modal-content {
+            width: 100%;
+          }
+        }
+        </style>
 </head>
 <body>
+    <br>
+    <a href="JavaScript:void(0)" onClick="message()">Click Me</a>
+    <br>
+    <h3>Mobile Phone Lookup</h3>
+    <img src="Images/iphone.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Iphone 11')">
+    <img src="Images/s20.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Samsung S20')">
+    <img src="Images/1112.jpg" style="width: 20vw; height: 20vw;" onclick="alert('Thanks for Buying Nokia 1112')">
+
+    <form>
+        <table>
+            <tr>
+                <td>Sno</td><td>Name</td><td>Class</td>
+            </tr>
+            <tr id='0'>
+                <td>0</td><td>Abc</td><td>5</td><td><button onclick="document.getElementById('0').remove()">Delete</button></td>
+            </tr>
+            <tr id='1'>
+                <td>1</td><td>Def</td><td>6</td><td><button onclick="document.getElementById('1').remove()">Delete</button></td>
+            </tr>
+            <tr id='2'>
+                <td>2</td><td>Ghi</td><td>7</td><td><button onclick="document.getElementById('2').remove()">Delete</button></td>
+            </tr>
+            <tr id='3'>
+                <td>3</td><td>Jkl</td><td>8</td><td><button onclick="document.getElementById('3').remove()">Delete</button></td>
+            </tr>
+        </table>
+    </form>
+    <img src="Images/iphone.jpg" style="width: 50vw; height: 50vw;" onmouseover="src='Images/s20.jpg'" onmouseout="src='Images/iphone.jpg'">
     
-    
+    <div style="text-align: center;" >
+        <h1 id="counter" style="color: blue;">0</h1><br>
+        <button onclick="var count=parseInt(document.getElementById('counter').innerText); document.getElementById('counter').innerHTML= ++count">Increase</button>&nbsp; &nbsp;
+        <button onclick="var count=parseInt(document.getElementById('counter').innerText); document.getElementById('counter').innerHTML= --count">Decrease</button>
+    </div>
+
+    <div style="text-align: center;">
+        <form action="#" onsubmit="show_data(document.getElementById('name').value,document.getElementById('fname').value,document.getElementById('phone').value)">
+            <table>
+                <tr>
+                    <td>Name</td><td>Fname</td><td>Phone</td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name"></td><td><input type="text" id="fname"></td><td><input id="phone" type="text"></td>
+                </tr>
+             <tr>
+                 <td colspan="3"><input type="submit"></td>
+             </tr>
+                
+            </table>
+        </form>
+        <p id="display">
+
+        </p>
+        <p id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illo atque, iusto sed 
+            laboriosam aliquid quisquam aperiam blanditiis odio aspernatur earum ex repudiandae rerum quo 
+            expedita fuga, dolorum eius corporis.
+            <a href="javascript:void(0);" onClick="expand();"><em>Click for more.</em></a>
+            </p>
+    </div>
+
+     <!-- Modal work -->
+   
+    <img id="myImg1" src="Images/1.jpg" alt="Pic 1" style="width:30vw; height: 30vw;" onmouseover="modalFunction('myImg1')">
+    <img id="myImg2" src="Images/2.jpg" alt="Pic 2" style="width:30vw; height: 30vw" onmouseover="modalFunction('myImg2')">
+    <img id="myImg3" src="Images/3.jpg" alt="Pic 3" style="width:30vw; height: 30vw" onmouseover="modalFunction('myImg3')">
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal"> <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+    </div>
+    <script>
+        function modalFunction(imageName){
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById(imageName);
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    }
+        </script>
+        <p style="text-align: center;" id="zoom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iure nobis voluptates placeat quibusdam cumque 
+            eligendi excepturi, at fugit quaerat distinctio consectetur ipsam dolorum, rerum nisi dignissimos sit corporis nulla.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem temporibus inventore similique? Deserunt 
+            perspiciatis sit esse facilis, qui, magnam modi consectetur reprehenderit, quia unde eum saepe! Esse rem eius dolores.
+        
+            <br>
+        <button onclick="zoomIn()">+</button>&nbsp &nbsp <button onclick="zoomOut()">-</button>
+    </p>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" />
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+        <p class="render"> First Name : Alex</p>
+        <p class="render" id="lastName">Last Name: Bank</p>
+        <p class="render"> Email : alexbank@example.com</p>
+        <p class="render"> Country : Pakistan </p>
+        <p class="render"> contact : +92 300 1234567</p>
+        </div>
+        </div>
+
+        <p id="show">
+                
+        </p>
+        <script>
+            function getData(){
+                let main=document.getElementById("main-content");
+                let child=main.children;
+                console.log(child);
+
+                var x=document.getElementsByClassName("render");
+                 for (var i=0; i<x.length; i++)
+                 {
+                     document.getElementById("show").innerHTML+=x[i].innerHTML;
+                 }
+                 document.getElementById("first-name").setAttribute("value", "Mr X");
+                 document.getElementById("last-name").setAttribute("value", "Mr Y");
+                 document.getElementById("email").setAttribute("value", "XYZ@gmail.com");
+                 
+
+                
+        }
+        getData();
+        </script>
+
 </body>
 </html>
