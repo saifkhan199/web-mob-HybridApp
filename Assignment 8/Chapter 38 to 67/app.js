@@ -151,15 +151,15 @@ function note(){
 	document.write("<br>Required notes of Rs. 10   :"+ (((amount % 100) % 50) / 10));
 	document.write("<br>Amount still remaining Rs. :"+ (((amount % 100) % 50) % 10));
 }
-// leap();
-// area();
-// main();
-// getIndex();
-// rm();
-// vowelSuccession();
-// distance();
-// pay();
-// note();
+ leap();
+ area();
+ main();
+ getIndex();
+ rm();
+ vowelSuccession();
+ distance();
+ pay();
+ note();
 
 //Chpater 43 to 48
 function message(){
