@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to VRTalking</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- bootstrap end -->
+
+     <!-- firebase db API -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBI8RW0UUt2G7syDI0IBJs533K5KFupBos",
+    authDomain: "vrtalking.firebaseapp.com",
+    databaseURL: "https://vrtalking.firebaseio.com",
+    projectId: "vrtalking",
+    storageBucket: "vrtalking.appspot.com",
+    messagingSenderId: "950299686898",
+    appId: "1:950299686898:web:a78aaced4da8f94848dd6b",
+    measurementId: "G-381PPL5M7H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to VRTalking !</h1>
+        <p class="lead">A Free Service to Chat with your Friends & Family </p>
+        <hr class="my-4">
+        <!-- <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">***</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+          </div> -->
+          <br>
+        <a class="btn btn-primary btn-lg rounded-pill" onclick="login()" role="button">Login with Facebook</a>
+        <!-- <a class="btn btn-primary btn-lg rounded-pill" href="#" role="button">Sign Up</a> -->
+      </div>
+
+      <div class="fixed-bottom  ">
+        <div class="d-flex justify-content-center">
+            <p id="cr">Copyright @ Saif | Allrights Reserved ©</p>
+        </div>
+        </div>
+
+      <script src="facebookAuth.js"></script>
+</body>
+</html>

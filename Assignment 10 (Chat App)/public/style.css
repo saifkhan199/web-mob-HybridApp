@@ -1,0 +1,13 @@
+div#messages {
+    min-height: 400px;
+    margin-bottom: 150px;
+    clear: both;
+    color: white;
+  }
+body{
+    background-image: url("bg.png");
+}
+#cr{
+    color: white;
+    font-weight: bold;
+}
